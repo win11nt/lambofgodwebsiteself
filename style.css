@@ -1,0 +1,621 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+#background-green {
+    background-image: url(./img/colorheader.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+}
+
+#background-yellow {
+    background-image: url(./img/yellowbackground.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#text-style {
+    -webkit-text-stroke: 1px #22251e;
+}
+
+/* Header */ 
+
+#header {
+    height: 57px;
+    background-image: url(./img/colorheader.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#nav {
+    color: #d0c9b9;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+    color: #d0c9b9;
+}
+
+#nav li a {
+    padding: 0 24px;
+    text-decoration: none;
+    line-height: 57px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav a:hover {
+    color: #ffda8f;
+}
+
+#nav .nav-arrow-down {
+    font-size: 10px;
+}
+
+#nav .subnav {
+    position: absolute;
+    left: 0;
+    background-color: #22251e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    list-style-type: none;
+    display: none;
+    line-height: 57px;
+}
+
+#nav .subnav a {
+    color: #d0c9b9;
+}
+
+/* Slider */
+
+#slider {
+    padding-top: 700px;
+    background-image: url('./img/omen.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Featured */ 
+
+#featured {
+    padding: 80px 0 40px;
+}
+
+.outnow {
+    display: flex;
+    max-width: 93.75rem;
+    justify-content: center;
+}
+
+.cover {
+    box-shadow: 0 0 0.9375rem 4px #000a;
+    margin-right: 3.125rem;
+    flex-basis: 31.25rem;
+}
+
+.cover-omens {
+    display: block;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    border: #dd953e 1px solid;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.list-song {
+    color: #d0c9b9;
+    font-family: "Hardwick WF", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 2.875rem;
+    -webkit-text-stroke: 2px #22251e;
+    text-transform: uppercase;
+    margin: 0;
+    color: #d0c9b9;
+    display: flex;
+}
+
+.out {
+    margin: 0.625rem 0 0;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.out span {
+    display: flex;
+    font-size: 2.25rem;
+    -webkit-text-stroke: 2px #22251e;
+    text-transform: uppercase;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+
+.all-icons {
+    border-radius: 50%;
+    border: 3px solid #3c534d;
+    width: 4.0625rem;
+    height: 4.0625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.875rem; 
+    text-decoration: none;
+    color: #3c534d;
+    margin-right: 8px;
+}
+
+.all-icons:hover {
+    background-color: #3c534d;
+    color: #22251e;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.tracks {
+    display: flex;
+}
+
+.tracks ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    color: #22251e;
+    text-transform: uppercase;
+    max-height: 13.75rem;
+    padding-left: 0;
+    flex: 1;
+    margin-right: 1.875rem;
+    line-height: 1.7em;
+    font-size: 24px;
+    justify-content: left;
+    font-weight: 548;
+    margin-top: 10px;
+}
+
+.tracks ul li {
+    padding-right: 20px;
+}
+
+/* Content */
+
+#content {
+
+}
+
+.container {
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text-wide {
+    font-size: 30px;
+    font-weight: 400;
+    color: #d0c9b9;
+}
+
+.text-opacity {
+    opacity: 0.8;
+    margin: 15px 0;
+    font-style: italic;
+    color: #d0c9b9;
+}
+
+.text-justify {
+    text-align: justify;
+    font-size: 16px;
+    color: #d0c9b9;
+}
+
+.image-of-bandmember {
+    display: flex;
+    padding: 32px 0;
+}
+
+.third {
+    color: #d0c9b9;
+}
+
+.name-member-band {
+    margin: -20px 0;
+    font-weight: 800;
+}
+
+.position-member-band {
+    margin-top: 20px;
+    font-size: 10px;
+    opacity: 0.6;
+}   
+
+.bandmember {
+    width: 80%;
+    border-radius: 2px;
+    margin-bottom: 16px;
+}
+
+/* Songs */
+
+.music-wrap {
+    margin: 30px 0 8px; 
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.release {
+    position: relative;
+    flex-basis: 23.5%;
+    margin-bottom: 2%;
+}
+
+.about-songs {
+    height: auto;
+    display: block;
+    color: #010000;
+    width: 100%;
+}
+
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.hover:hover, 
+.hover:active, 
+.hover:focus, 
+.hover:target , 
+.hover:focus-within {
+    opacity: 1;
+  }
+  
+.link-to-songs {
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #dd953e;
+    color: #d0c9b9;
+    -webkit-text-stroke: 1px #22251e;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-family: "Hardwick WF", sans-serif;
+}
+
+.link-to-songs:hover {
+    color: #d0c9b9;
+    background-color: #22251e;
+    -webkit-text-stroke: 1px #22251e;
+    font-family: "Hardwick WF", sans-serif;
+}
+
+/* Tickets */
+
+.sold-out {
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.in-stocks {
+    color: #fff;
+    background-color: #000;
+    float: right;
+    margin-right: 16px;
+    padding: 0 8px;
+    border-radius: 50%;
+}
+
+.about-tickets {
+    padding: 8px 8px;
+    margin: 0 -16px 70px;
+    display: flex;
+}
+
+.places {
+    width: calc(100% / 3);
+    padding: 0 8px;
+}
+
+.places-to-buy-tickets {
+    -webkit-text-stroke: 1px #22251e;
+    background-color: #ee00;
+    color: #d0c9b9;
+    text-align: left;
+    padding: 15px 16px 0;
+    font-size: 17px;
+    border: 1px solid #8b7b67;
+    
+}
+
+.image {
+    width: 100%;
+    height: 35%;
+}
+
+.image:hover {
+    opacity: 0.6;
+}
+
+.location {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.date-show {
+    opacity: 0.6;
+}
+
+.title-show {
+    margin: 15px 0;
+}
+
+.buy-and-set {
+    font-size: 17px;
+}
+
+.set-reminder {
+    margin: 0 2px 16px;
+    padding: 10px 42px;
+    background-color: rgba(60,83,77,1);
+    color: #d0c9b9;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+.buy-tickets {
+    margin: 0 2px 16px;
+    padding: 10px 52px;
+    background-color: #D5923F;
+    color: #d0c9b9;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.set-reminder:hover,
+.buy-tickets:hover {
+    opacity: 0.75;
+}
+
+/* Email and Social */ 
+
+#footer {
+    padding: 4.375rem 10px;
+    margin: 0 105px;
+    position: relative;
+}
+
+.footer-nd {
+    display: block;
+    text-align: center;
+    max-width: 76.875rem;
+}
+
+.newsletter {
+    margin: 0 auto 43px;
+    width: 39.25rem;
+    max-width: 100%;
+}
+
+.input-wrap {
+    display: flex; 
+    font-family: "Hardwick WF", sans-serif;
+}
+
+input::placeholder {
+    color: #d0c9b9;
+}
+
+.email-address {
+    display: inline-block;
+    flex: 1;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #dd953e;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: #d0c9b9;
+    font-size: 0.875rem;
+}
+
+.email-address:focus{
+    outline: none;
+}
+
+.newslettersubmit {
+    padding: 1px 6px;
+    margin-left: 0.3125rem;
+    font-size: 1.475rem;
+    color: #22251e;
+    -webkit-text-fill-color: #d0c9b9;
+    -webkit-text-stroke: 1px #22251e;
+    background-color: #dd953e;
+    display: inline-block;
+    text-transform: uppercase;
+    border: none;
+    line-height: 1.15;
+}
+
+.newslettersubmit:hover {
+    color: #d0c9b9;
+    background-color: #22251e;
+    cursor: pointer;
+    -webkit-text-fill-color: 1px #22251e;
+    -webkit-text-stroke: #d0c9b9;
+    transition: all 0.3s;
+}
+
+.wrap {
+    float: right;
+}
+
+.social {
+    display: flex;
+}
+
+.social li {
+    list-style-type: none;
+}
+
+.icon-social {
+    color: #dd953e;
+    font-size: 25px;
+    margin-right: 16px;
+}
+
+/* Tickets overlay */
+.open-off {
+    display: none;
+}
+
+.tickets-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: initial;
+}
+
+.tickets-offers-menu {
+    display: block;
+    width: 400px;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.tickets-close {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    color: #d59240;
+    font-size: 22px;
+}
+
+.tickets-header {
+    color: rgba(208,201,185,1);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 15px;
+}
+
+.tickets-event-info {
+    border: 1px solid rgba(208,201,185,1);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.tickets-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100px;
+    padding: 0 5px;
+    color: rgba(208,201,185,1);
+}
+
+.tickets-icon {
+    font-size: 28px;
+    padding: 0 16px;
+    color: #d59240;
+}
+
+.tickets-datetimeText {
+
+}
+
+.tickets-datetimeTime {
+
+}
+
+.tickets-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    display: flex;
+}
+
+.tickets-infoText {
+
+}
+
+.tickets-infoName {
+
+}
+
+.tickets-infoAddress {
+
+}
+
+.confirm-tickets {
+    background-color: rgb(22, 36, 59);
+    border: 1px solid transparent;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.confirm-tickets:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
